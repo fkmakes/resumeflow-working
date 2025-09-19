@@ -192,7 +192,7 @@ export default function Candidates() {
                 <div>
                   <h4 className="text-sm font-medium text-gray-500">Skills</h4>
                   <div className="mt-1 flex flex-wrap gap-1">
-                    {selectedCandidate.skills.map((skill, idx) => (
+                    {selectedCandidate.skills.map((skill: string, idx: number) => (
                       <span key={idx} className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-100 text-indigo-800">
                         {skill}
                       </span>
